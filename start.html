@@ -6,6 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WebShop</title>
     <link rel="stylesheet" href="css/tptpstil.css" />
+
+    <script
+      language="JavaScript"
+      type="text/javascript"
+      src="/js/jQuery.js"
+    ></script>
+    <script
+      language="JavaScript"
+      type="text/javascript"
+      src="/js/preloader.js"
+    ></script>
+    <script>
+      $(function () {
+        $("a#toggle").click(function () {
+          $("#contact").slideToggle();
+          return false;
+        });
+      });
+    </script>
   </head>
 
   <body>
@@ -25,13 +44,25 @@
       <table>
         <tr>
           <td>
-            <div class="logo">
-              <img src="/assets/logo.png" alt="bag" />
-              <h1>WebShop.</h1>
-            </div>
+            <a href="start.html">
+              <div class="logo">
+                <img src="/assets/logo.png" alt="bag" />
+                <h1>WebShop.</h1>
+              </div>
+            </a>
           </td>
           <td>
             <div class="navbuttons">
+              <form>
+                <input
+                  type="search"
+                  placeholder="npr. Košulje"
+                  aria-label="Search"
+                />
+                <button type="submit">
+                  Pretraži
+                </button>
+              </form>
               <a href="start.html">
                 Početna
               </a>
@@ -57,5 +88,48 @@
         </a>
       </div>
     </div>
+    <div class="shop-category">
+      <h1>
+        Kolekcije.
+      </h1>
+
+      <table>
+        <tr>
+          <td>
+            <a href="proizvodi.html">
+              <div class="kol1">
+                <h2>Proljeće.</h2>
+              </div>
+            </a>
+          </td>
+          <td style="width: 30%;">
+            <a href="proizvodi.html">
+              <div class="kol2">
+                <h2>Ljeto.</h2>
+              </div>
+            </a>
+          </td>
+          <td>
+            <a href="proizvodi.html">
+              <div class="kol3">
+                <h2>Jesen.</h2>
+              </div>
+            </a>
+          </td>
+        </tr>
+      </table>
+    </div>
   </body>
+  <div class="spinner-wrapper">
+    <div class="spinner">
+      <div class="sk-chase">
+        <div class="sk-chase-dot"></div>
+        <div class="sk-chase-dot"></div>
+        <div class="sk-chase-dot"></div>
+        <div class="sk-chase-dot"></div>
+        <div class="sk-chase-dot"></div>
+        <div class="sk-chase-dot"></div>
+      </div>
+    </div>
+  </div>
 </html>
