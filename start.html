@@ -1,50 +1,43 @@
 <!DOCTYPE html>
 
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>WebShop</title>
-    <link rel="stylesheet" href="css/tptpstil.css" />
 
-    <script
-      language="JavaScript"
-      type="text/javascript"
-      src="/js/jQuery.js"
-    ></script>
-    <script
-      language="JavaScript"
-      type="text/javascript"
-      src="/js/preloader.js"
-    ></script>
-    <script src="/js/navbar.js"></script>
-    <script src="/js/fadeIn.js"></script>
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WebShop</title>
+  <link rel="stylesheet" href="css/tptpstil.css" />
 
-  <body onload="animateHTML().init();">
-    <div class="social">
-      <a href="https://www.facebook.com">
-        <img src="./assets/facebook.png" alt="" />
-      </a>
-      <a href="https://www.instagram.com">
-        <img src="./assets/instagram.png" alt="" />
-      </a>
-      <a href="https://www.twitter.com">
-        <img src="./assets/twitter.png" alt="" />
-      </a>
-    </div>
-    <div class="dostava">
-      <img src="/assets/transport.png" alt="" />
-      <h4>BESPLATNA DOSTAVA ŠIROM BIH!</h4>
-      <img src="./assets/transport.png" alt="" />
-    </div>
-    <div class="topnav">
-      <table>
-        <tr>
-          <td>
-            <div class="logo">
-              <span
-                style="
+  <script language="JavaScript" type="text/javascript" src="/js/jQuery.js"></script>
+  <script language="JavaScript" type="text/javascript" src="/js/preloader.js"></script>
+  <script src="/js/navbar.js"></script>
+  <script src="/js/fadeIn.js"></script>
+  <script src="/js/slideLeft.js"></script>
+</head>
+
+<body onload="animateHTML().init();">
+  <div class="social">
+    <a href="https://www.facebook.com">
+      <img src="./assets/facebook.png" alt="" />
+    </a>
+    <a href="https://www.instagram.com">
+      <img src="./assets/instagram.png" alt="" />
+    </a>
+    <a href="https://www.twitter.com">
+      <img src="./assets/twitter.png" alt="" />
+    </a>
+  </div>
+  <div class="dostava">
+    <img src="/assets/transport.png" alt="" />
+    <h4>BESPLATNA DOSTAVA ŠIROM BIH!</h4>
+    <img src="./assets/transport.png" alt="" />
+  </div>
+  <div class="topnav">
+    <table>
+      <tr>
+        <td>
+          <div class="logo">
+            <span style="
                   position: relative;
                   bottom: 15px;
                   padding-left: 20px;
@@ -52,130 +45,163 @@
                   font-size: 30px;
                   cursor: pointer;
                   display: inline-block;
-                "
-                onclick="openNav('leftSidenav')"
-                >&#9776;</span
-              >
-              <a href="start.html">
-                <img src="./assets/logo.png" alt="bag" />
-                <h1>WebShop.</h1>
-              </a>
+                " onclick="openNav('leftSidenav')">&#9776;</span>
+            <a href="start.html">
+              <img src="./assets/logo.png" alt="bag" />
+              <h1>WebShop.</h1>
+            </a>
+          </div>
+        </td>
+        <td>
+          <div class="navbuttons">
+            <form>
+              <input type="search" placeholder="npr. Košulje" aria-label="Search" />
+              <button type="submit">
+                Pretraži
+              </button>
+            </form>
+            <a href="start.html">
+              Početna
+            </a>
+            <a href="proizvodi.html">
+              Proizvodi
+            </a>
+            <a href="kontakt.html">
+              Kontakt
+            </a>
+            <span onclick="openNav('rightSidenav')">
+              Partneri
+            </span>
+          </div>
+        </td>
+      </tr>
+    </table>
+  </div>
+  <div class="coverimg">
+    <div class="title1">
+      <h1>20% Popusta</h1>
+    </div>
+    <div class="title2">
+      <h1>Na nove artikle iz ljetne kolekcije</h1>
+      <a href="proizvodi.html">
+        Na ponudu
+      </a>
+    </div>
+  </div>
+  <div class="shop-category">
+    <h1>
+      Kolekcije.
+    </h1>
+    <table>
+      <tr>
+        <td>
+          <a href="proizvodi.html">
+            <div class="kol1 fade-in-element hidden">
+              <h2>Proljeće.</h2>
             </div>
-          </td>
-          <td>
-            <div class="navbuttons">
-              <form>
-                <input
-                  type="search"
-                  placeholder="npr. Košulje"
-                  aria-label="Search"
-                />
-                <button type="submit">
-                  Pretraži
-                </button>
-              </form>
-              <a href="start.html">
-                Početna
-              </a>
-              <a href="proizvodi.html">
-                Proizvodi
-              </a>
-              <a href="kontakt.html">
-                Kontakt
-              </a>
-              <span onclick="openNav('rightSidenav')">
-                Partneri
-              </span>
+          </a>
+        </td>
+        <td style="width: 30%;">
+          <a href="proizvodi.html">
+            <div class="kol2 fade-in-element hidden">
+              <h2>Ljeto.</h2>
             </div>
-          </td>
-        </tr>
-      </table>
-    </div>
-    <div class="coverimg">
-      <div class="title1">
-        <h1>20% Popusta</h1>
-      </div>
-      <div class="title2">
-        <h1>Na nove artikle iz ljetne kolekcije</h1>
-        <a href="proizvodi.html">
-          Na ponudu
-        </a>
-      </div>
-    </div>
-    <div class="shop-category">
-      <h1>
-        Kolekcije.
-      </h1>
-      <table>
-        <tr>
-          <td>
-            <a href="proizvodi.html">
-              <div class="kol1 fade-in-element hidden">
-                <h2>Proljeće.</h2>
-              </div>
-            </a>
-          </td>
-          <td style="width: 30%;">
-            <a href="proizvodi.html">
-              <div class="kol2 fade-in-element hidden">
-                <h2>Ljeto.</h2>
-              </div>
-            </a>
-          </td>
-          <td>
-            <a href="proizvodi.html">
-              <div class="kol3 fade-in-element hidden">
-                <h2>Jesen.</h2>
-              </div>
-            </a>
-          </td>
-        </tr>
-      </table>
-    </div>
-    <div class="subscribe fade-in-element hidden">
-      Novi katalozi svake sedmice!
-      <div class="signup">
-        <input type="text" placeholder="Email" aria-label="Search" />
-        <button type="submit">
-          Pretplati me
-        </button>
-      </div>
-    </div>
-    <div class="shoe"></div>
-  </body>
-  <div id="rightSidenav" class="sidenavRight">
-    <a
-      href="javascript:void(0)"
-      class="closebtn"
-      onclick="closeNav('rightSidenav')"
-      >&times;</a
-    >
-    <a href="#">Partner 1</a>
-    <a href="#">Partner 2</a>
-    <a href="#">Partner 3</a>
-    <a href="#">Partner 4</a>
+          </a>
+        </td>
+        <td>
+          <a href="proizvodi.html">
+            <div class="kol3 fade-in-element hidden">
+              <h2>Jesen.</h2>
+            </div>
+          </a>
+        </td>
+      </tr>
+    </table>
   </div>
-  <div id="leftSidenav" class="sidenavLeft">
-    <a
-      href="javascript:void(0)"
-      class="closebtn"
-      onclick="closeNav('leftSidenav')"
-      >&times;</a
-    >
-    <a href="#">Tarik Dzambic</a>
-    <a href="#">Nedim Dzelilovic</a>
-    <a href="#">Amar Dzinic</a>
-  </div>
-  <div class="spinner-wrapper">
-    <div class="spinner">
-      <div class="sk-chase">
-        <div class="sk-chase-dot"></div>
-        <div class="sk-chase-dot"></div>
-        <div class="sk-chase-dot"></div>
-        <div class="sk-chase-dot"></div>
-        <div class="sk-chase-dot"></div>
-        <div class="sk-chase-dot"></div>
-      </div>
+  <div class="subscribe fade-in-element hidden">
+    Novi katalozi svake sedmice!
+    <div class="signup">
+      <input type="text" placeholder="Email" aria-label="Search" />
+      <button type="submit">
+        Pretplati me
+      </button>
     </div>
   </div>
+  <div class="shoe"></div>
+</body>
+<div id="rightSidenav" class="sidenavRight">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav('rightSidenav')">&times;</a>
+  <a href="#">Partner 1</a>
+  <a href="#">Partner 2</a>
+  <a href="#">Partner 3</a>
+  <a href="#">Partner 4</a>
+</div>
+<div id="leftSidenav" class="sidenavLeft">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav('leftSidenav');resetPic();">&times;</a>
+
+
+  <div class="imgcont">
+    <div class="profile-pic">
+      <img id="tarikSl" src="/assets/Tarik.jpg" alt="" />
+      <a id="tarikTxt" href="#" onclick="slideLeft('tarikSl','tarikTxt','aboutTarik');">Tarik Džambić</a>
+    </div>
+    <div class="about" id="aboutTarik">
+      <h2>Usmjerenje:</h2>
+      <h3>AR</h3><br>
+      <h2>E-mail:</h2>
+      <h3>tarik.dzambic@fet.ba</h3><br>
+      <h2>Kontakt:</h2>
+      <h3>+387603399399</h3><br>
+    </div>
+  </div>
+
+
+
+  <div class="imgcont">
+    <div class="profile-pic">
+      <img id="nedimSl" src="/assets/Nedim.png" alt="" />
+      <a id="nedimTxt" href="#" onclick="slideLeft('nedimSl','nedimTxt','aboutNedim');">Nedim Dželilović</a>
+    </div>
+    <div class="about" id="aboutNedim">
+      <h2>Usmjerenje:</h2>
+      <h3>AR</h3><br>
+      <h2>E-mail:</h2>
+      <h3>nedim.dzelilovic@fet.ba</h3><br>
+      <h2>Kontakt:</h2>
+      <h3></h3><br>
+    </div>
+  </div>
+
+
+
+  <div class="imgcont">
+    <div class="profile-pic">
+      <img id="amarSl" src="/assets/Amar.png" alt="" />
+      <a id="amarTxt" href="#" onclick="slideLeft('amarSl','amarTxt','aboutAmar');">Amar Džindić</a>
+    </div>
+    <div class="about" id="aboutAmar">
+      <h2>Usmjerenje:</h2>
+      <h3>ESKE</h3><br>
+      <h2>E-mail:</h2>
+      <h3>amar.dzindic@fet.ba</h3><br>
+      <h2>Kontakt:</h2>
+      <h3></h3><br>
+    </div>
+  </div>
+
+
+</div>
+<div class="spinner-wrapper">
+  <div class="spinner">
+    <div class="sk-chase">
+      <div class="sk-chase-dot"></div>
+      <div class="sk-chase-dot"></div>
+      <div class="sk-chase-dot"></div>
+      <div class="sk-chase-dot"></div>
+      <div class="sk-chase-dot"></div>
+      <div class="sk-chase-dot"></div>
+    </div>
+  </div>
+</div>
+
 </html>

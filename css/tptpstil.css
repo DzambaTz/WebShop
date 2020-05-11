@@ -9,7 +9,7 @@
 }
 
 .social {
-  padding-left: 50px;
+  padding-left: 10px;
   width: 100%;
   height: 40px;
   background-color: #000 !important;
@@ -156,6 +156,7 @@ hr {
   text-decoration: none;
   font-weight: bold;
   font-family: "Lato", sans-serif;
+  cursor: pointer;
 }
 
 .navbuttons span:hover {
@@ -364,7 +365,7 @@ hr {
   padding-top: 15%;
   position: relative;
   left: 30%;
-  z-index: 1000;
+  z-index: 1;
   color: #fff;
 }
 .shop-category table {
@@ -424,8 +425,24 @@ hr {
     opacity: 1;
   }
 }
+
+@keyframes hide-out {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    transform: scale(0.7, 0.7);
+  }
+}
+
 .fade-in-element {
   animation: fade-in 1s;
+}
+
+.hidden {
+  opacity: 0;
+  animation: hide-out 1s;
 }
 
 .shoes {
@@ -441,13 +458,15 @@ hr {
 
 .subscribe {
   display: inline-block;
-  width: 55%;
+  width: 42%;
   text-align: center;
   font-family: "Lato", sans-serif;
   font-size: 40pt;
   text-shadow: 4px 4px #ccc;
   height: 600px;
   vertical-align: middle;
+  margin-left: 100px;
+  margin-right: 100px;
 }
 
 .signup button:hover {
@@ -458,7 +477,7 @@ hr {
 
 .signup button {
   display: inline-block;
-  width: 15%;
+  width: 17%;
   height: 3em;
   border: 0.15em solid #000;
   box-sizing: border-box;
@@ -488,21 +507,26 @@ hr {
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: #000;
+  background-color: #111;
   overflow-x: hidden;
-  transition: 0.5s;
+  transition: 0.3s;
   padding-top: 60px;
   text-align: center;
-  opacity: 95%;
+  -ms-overflow-style: none;
+}
+
+.sidenavLeft::-webkit-scrollbar {
+  display: none;
 }
 
 .sidenavLeft a {
+  font-family: "Lato", sans-serif;
+  font-size: 23px;
   padding: 8px 8px 8px 32px;
   text-decoration: none;
-  font-size: 25px;
   color: #818181;
   display: block;
-  transition: 0.3s;
+  font-size: 18px;
 }
 
 .sidenavLeft a:hover {
@@ -531,6 +555,7 @@ hr {
 }
 
 .sidenavRight a {
+  font-family: "Lato", sans-serif;
   padding: 8px 8px 8px 32px;
   text-decoration: none;
   font-size: 25px;
@@ -549,4 +574,51 @@ hr {
   right: 25px;
   font-size: 36px;
   margin-left: 50px;
+}
+
+.profile-pic {
+  display: inline-block;
+  height: 200px;
+  width: 200px;
+  align-self: center;
+}
+.profile-pic img {
+  border: solid 6px dimgray;
+  border-radius: 50%;
+  scale: 0.5;
+  height: 200px;
+  width: 200px;
+}
+
+.about{
+  display: inline-block;
+  opacity: 0%;
+  text-align: left;
+  width: 0px;
+  vertical-align: top;
+  height: 72px;
+  position: relative;
+  top: 18%;
+}
+
+.about h2{
+  color: #aaa;
+  text-decoration: underline white;
+  display: inline-block;
+  font-family: "Lato", sans-serif;
+  font-size: 20px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.about h3{
+  display: inline-block;
+  color: white;
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  margin: 3px;
+}
+
+.imgcont{
+  height: 276px;
 }

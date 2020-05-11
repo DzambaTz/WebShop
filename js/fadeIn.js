@@ -1,7 +1,7 @@
 var animateHTML = function () {
   var elems;
   var windowHeight;
-
+  var done = false;
   function init() {
     elems = document.querySelectorAll(".hidden");
     windowHeight = window.innerHeight;
