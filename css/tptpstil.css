@@ -178,7 +178,7 @@ hr {
   margin-bottom: 200px;
   padding: 0;
   height: 800px;
-  background-image: url(/assets/woman.png);
+  background-image: url(../assets/woman.png);
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -386,7 +386,7 @@ hr {
   width: 400px;
   height: 300px;
   margin-left: 130px;
-  background-image: url(/assets/proljece.jpeg);
+  background-image: url(../assets/proljece.jpeg);
   background-size: cover;
   border-radius: 3%;
 }
@@ -402,7 +402,7 @@ hr {
   width: 400px;
   height: 300px;
   margin-left: 55px;
-  background-image: url(/assets/ljeto.jpg);
+  background-image: url(../assets/ljeto.jpg);
   background-size: cover;
   border-radius: 3%;
 }
@@ -411,7 +411,7 @@ hr {
   width: 400px;
   height: 300px;
   margin: 0;
-  background-image: url(/assets/jesen.jpg);
+  background-image: url(../assets/jesen.jpg);
   background-size: cover;
   border-radius: 3%;
 }
@@ -453,7 +453,8 @@ hr {
   display: inline-block;
   width: 36%;
   height: 600px;
-  background-image: url(/assets/shoe.webp);
+  background-image: url(../assets/shoe.webp);
+  margin-bottom: 300px;
 }
 
 .subscribe {
@@ -467,6 +468,13 @@ hr {
   vertical-align: middle;
   margin-left: 100px;
   margin-right: 100px;
+  vertical-align: top;
+  margin-bottom: 300px;
+}
+
+.signup{
+  position: relative;
+  top: 50%
 }
 
 .signup button:hover {
