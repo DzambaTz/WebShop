@@ -1,12 +1,12 @@
 var pressed = {
-  "tarikSl": false,
-  "nedimSl": false,
-  "amarSl": false
+  tarikSl: false,
+  nedimSl: false,
+  amarSl: false,
 };
 
 var i = 0;
 function slideLeft(name1, name2, name3) {
-  document.getElementById("leftSidenav").style.width = "40%";
+  document.getElementById("leftSidenav").style.width = "35%";
   if (!pressed[name1]) {
     document.getElementById(name1).animate(
       [
@@ -102,20 +102,17 @@ function slideLeft(name1, name2, name3) {
         duration: 150,
         easing: "ease",
       }
-    )
+    );
 
     document.getElementById(name3).style.width = "0px";
     pressed[name1] = false;
     i = 0;
     for (element in pressed) {
-      console.log(pressed[element])
-      if (pressed[element])
-        i++
+      console.log(pressed[element]);
+      if (pressed[element]) i++;
     }
 
-    if (i == 0)
-      document.getElementById("leftSidenav").style.width = "20%";
-
+    if (i == 0) document.getElementById("leftSidenav").style.width = "20%";
   }
 }
 
