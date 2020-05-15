@@ -26,6 +26,14 @@
     <script src="./js/navbar.js"></script>
     <script src="./js/fadeIn.js"></script>
     <script src="./js/slideLeft.js"></script>
+    <script
+      src="https://kit.fontawesome.com/75cf2dfb1a.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
   </head>
 
   <body onload="animateHTML().init();">
@@ -150,31 +158,133 @@
     </div>
     <div class="shoe"></div>
 
-    <div class="instagram"></div>
+    <div class="slider-wrapper">
+      <div class="post-slider">
+        <h1 class="slider-title fade-in-element hidden">
+          Popularno na instagramu.
+        </h1>
+        <i class="fas fa-chevron-left prev"></i>
+        <i class="fas fa-chevron-right next"></i>
+        <div class="post-wrapper">
+          <div class="post">
+            <img class="slider-image" src="./assets/insta1.png" alt="" />
+            <div class="post-info">
+              <h3>
+                <a href="https://www.instagram.com"
+                  >Life is a party, Dress like it.</a
+                >
+              </h3>
+              <i class="fab fa-instagram"> <h4>andrej</h4></i>
+              <i class="far fa-calendar"> <h4>Maj 5.</h4></i>
+            </div>
+          </div>
+          <div class="post">
+            <img class="slider-image" src="./assets/insta2.png" alt="" />
+            <div class="post-info">
+              <h3>
+                <a href="https://www.instagram.com"
+                  >Always dress well but keep it simple.</a
+                >
+              </h3>
+              <i class="fab fa-instagram"> <h4>skphotoreflection</h4></i>
+              <i class="far fa-calendar"> <h4>Maj 14.</h4></i>
+            </div>
+          </div>
+          <div class="post">
+            <img class="slider-image" src="./assets/insta3.png" alt="" />
+            <div class="post-info">
+              <h3>
+                <a href="https://www.instagram.com"
+                  >Quality never goes out of style.</a
+                >
+              </h3>
+              <i class="fab fa-instagram"> <h4>ray.ban</h4></i>
+              <i class="far fa-calendar"> <h4>April 8.</h4></i>
+            </div>
+          </div>
+          <div class="post">
+            <img class="slider-image" src="./assets/insta4.png" alt="" />
+            <div class="post-info">
+              <h3>
+                <a href="https://www.instagram.com"
+                  >Some call it arrogant; I call it confident.</a
+                >
+              </h3>
+              <i class="fab fa-instagram"> <h4>luisa.viaroma</h4></i>
+              <i class="far fa-calendar"> <h4>Maj 10.</h4></i>
+            </div>
+          </div>
+          <div class="post">
+            <img class="slider-image" src="./assets/insta5.png" alt="" />
+            <div class="post-info">
+              <h3>
+                <a href="https://www.instagram.com"
+                  >A style is primarily a matter of instinct.</a
+                >
+              </h3>
+              <i class="fab fa-instagram"> <h4>fashion.studio</h4></i>
+              <i class="far fa-calendar"> <h4>Maj 12.</h4></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="contact-form fade-in-element hidden">
+      <h1>KONTAKTIRAJTE NAS.</h1>
+
+      <form id="form" class="topBefore" onsubmit="return validateForm();">
+        <input id="name" type="text" placeholder="IME" />
+        <input id="number" type="text" placeholder="BROJ TELEFONA" />
+        <input id="email" type="text" placeholder="E-MAIL" />
+        <textarea id="message" type="text" placeholder="PORUKA"></textarea>
+        <input id="submit" type="submit" value="POŠALJI" />
+      </form>
+    </div>
   </body>
   <div id="rightSidenav" class="sidenavRight">
+    <h1>Partneri</h1>
     <a
       href="javascript:void(0)"
       class="closebtn"
       onclick="closeNav('rightSidenav')"
       >&times;</a
     >
-    <a href="#">Partner 1</a>
-    <a href="#">Partner 2</a>
-    <a href="#">Partner 3</a>
-    <a href="#">Partner 4</a>
+    <div class="partner-pic">
+      <a href="https://shop.alma-ras.com">
+        <img src="./assets/almaRas.png" alt="" /><br />
+        Alma Ras</a
+      >
+    </div>
+    <div class="partner-pic">
+      <a href="https://www.zara.com/ba/">
+        <img src="./assets/zara.png" alt="" /><br />
+        Zara</a
+      >
+    </div>
+    <div class="partner-pic">
+      <a href="https://www.hm.com/ba/">
+        <img src="./assets/hm.png" alt="" /><br />
+        H&M</a
+      >
+    </div>
+    <div class="partner-pic">
+      <a href="https://www.kenzo.com/eu/en/home">
+        <img src="./assets/kenzo.png" alt="" /><br />
+        Kenzo</a
+      >
+    </div>
   </div>
   <div id="leftSidenav" class="sidenavLeft">
+    <h1>Autori</h1>
     <a
       href="javascript:void(0)"
       class="closebtn"
       onclick="closeNav('leftSidenav');resetPic();"
       >&times;</a
     >
-
     <div class="imgcont">
       <div class="profile-pic">
-        <img id="tarikSl" src="./assets/Tarik.jpg" alt="" />
+        <img id="tarikSl" src="./assets/tarik.jpg" alt="" />
         <a
           id="tarikTxt"
           href="#"
@@ -197,7 +307,7 @@
 
     <div class="imgcont">
       <div class="profile-pic">
-        <img id="nedimSl" src="./assets/Nedim.png" alt="" />
+        <img id="nedimSl" src="./assets/nedim.png" alt="" />
         <a
           id="nedimTxt"
           href="#"
@@ -218,9 +328,9 @@
       </div>
     </div>
 
-    <div class="imgcont">
+    <div id="amar" class="imgcont">
       <div class="profile-pic">
-        <img id="amarSl" src="./assets/Amar.png" alt="" />
+        <img id="amarSl" src="./assets/amar.png" alt="" />
         <a
           id="amarTxt"
           href="#"
