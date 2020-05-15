@@ -841,7 +841,98 @@ hr {
   background-color: #000;
   color: #fff;
 }
-/*za stranicu kontakt*/
-.naslov {
-  text-align: center;
+
+	
+.par1{
+font-weight:bold;
+padding-top: 20px;
+	
 }
+	
+
+.kont h1 {
+  position: relative;
+  margin: 100px 0 25px 0;
+  font-size: 35px;
+  letter-spacing: 7px;
+    text-align: center;
+  text-decoration: underline dimgray;
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
+  text-shadow: 3px 3px #ccc;
+}
+
+#form {
+  position: relative;
+  width: 500px;
+  margin: 50px auto 100px auto;
+ 
+}
+
+.kont input {
+  font-family: "Lato", sans-serif;
+  font-size: 0.875em;
+  width: 470px;
+  height: 50px;
+  padding: 0px 15px 0px 15px;
+
+  background: transparent;
+  outline: none;
+  color: dimgray;
+
+  border: solid 1px #b3aca7;
+  border-bottom: none;
+
+}
+.kont input:hover {
+  background: #f5f5f5;
+  color: dimgray;
+}
+.kont textarea {
+  width: 470px;
+  max-width: 470px;
+  height: 110px;
+  max-height: 110px;
+  padding: 15px;
+  min-width: 470px;
+  min-height: 110px;
+
+  background: transparent;
+  outline: none;
+
+  color: #eee;
+  font-family: "Lato", sans-serif;
+  font-size: 0.875em;
+
+  border: solid 1px #b3aca7;
+  
+}
+.kont textarea:hover {
+  background: #f5f5f5;
+  color: dimgray;
+    
+}
+.kont #submit {
+  width: 502px;
+
+  padding: 0;
+  margin: -5px 0px 0px 0px;
+
+  font-family: "Lato", sans-serif;
+  font-size: 0.875em;
+  color: dimgray;
+
+  outline: none;
+  cursor: pointer;
+
+  border: solid 1px #b3aca7;
+  border-top: none;
+   
+}
+.kont #submit:hover {
+  background-color: #000;
+  color: #fff;
+    
+}
+
+
