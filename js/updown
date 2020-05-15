@@ -1,0 +1,6 @@
+
+$(document).ready(function(){
+  $("#pitanje1").click(function(){
+    $("#odg1").slideToggle("slow");
+  });
+});
