@@ -333,7 +333,7 @@ hr {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: dimgray;
+  background-color: #aaa;
   z-index: 999999;
 }
 
@@ -388,7 +388,7 @@ hr {
   margin-left: 130px;
   background-image: url(../assets/proljece.jpeg);
   background-size: cover;
-  border-radius: 3%;
+  border-radius: 2%;
 }
 
 .kol1 h2 {
@@ -404,7 +404,7 @@ hr {
   margin-left: 55px;
   background-image: url(../assets/ljeto.jpg);
   background-size: cover;
-  border-radius: 3%;
+  border-radius: 2%;
 }
 
 .kol3 {
@@ -413,7 +413,7 @@ hr {
   margin: 0;
   background-image: url(../assets/jesen.jpg);
   background-size: cover;
-  border-radius: 3%;
+  border-radius: 2%;
 }
 
 @keyframes fade-in {
@@ -447,14 +447,15 @@ hr {
 
 .shoes {
   width: 100%;
-  height: 800px;
+  height: 340px;
 }
 .shoe {
   display: inline-block;
-  width: 36%;
-  height: 600px;
-  background-image: url(../assets/shoe.webp);
+  width: 585px;
+  height: 340px;
+  background-image: url(../assets/shoes.png);
   margin-bottom: 300px;
+  margin-top: 200px;
 }
 
 .subscribe {
@@ -464,17 +465,18 @@ hr {
   font-family: "Lato", sans-serif;
   font-size: 40pt;
   text-shadow: 4px 4px #ccc;
-  height: 600px;
+  height: 400px;
   vertical-align: middle;
   margin-left: 100px;
   margin-right: 100px;
   vertical-align: top;
   margin-bottom: 300px;
+  margin-top: 200px;
 }
 
-.signup{
+.signup {
   position: relative;
-  top: 50%
+  top: 15%;
 }
 
 .signup button:hover {
@@ -598,7 +600,7 @@ hr {
   width: 200px;
 }
 
-.about{
+.about {
   display: inline-block;
   opacity: 0%;
   text-align: left;
@@ -609,7 +611,7 @@ hr {
   top: 18%;
 }
 
-.about h2{
+.about h2 {
   color: #aaa;
   text-decoration: underline white;
   display: inline-block;
@@ -619,7 +621,7 @@ hr {
   margin-bottom: 0px;
 }
 
-.about h3{
+.about h3 {
   display: inline-block;
   color: white;
   font-family: "Lato", sans-serif;
@@ -627,6 +629,6 @@ hr {
   margin: 3px;
 }
 
-.imgcont{
+.imgcont {
   height: 276px;
 }
