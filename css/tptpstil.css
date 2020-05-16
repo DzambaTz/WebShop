@@ -844,12 +844,14 @@ hr {
 
 	
 .par1{
-font-weight:bold;
-padding-top: 20px;
-	
+padding-top: 40px;
+font-family: "Lato", sans-serif;
+padding-left: 10px;
+font-size: 17px;
 }
 .kont{
 	float:left;
+	padding-left:15px;
 }
 .kont h1 {
   position: relative;
@@ -879,7 +881,6 @@ padding-top: 20px;
   background: transparent;
   outline: none;
   color: dimgray;
-
   border: solid 1px #b3aca7;
   border-bottom: none;
 
@@ -896,14 +897,11 @@ padding-top: 20px;
   padding: 15px;
   min-width: 470px;
   min-height: 110px;
-
   background: transparent;
   outline: none;
-
   color: #eee;
   font-family: "Lato", sans-serif;
   font-size: 0.875em;
-
   border: solid 1px #b3aca7;
   
 }
@@ -937,20 +935,38 @@ padding-top: 20px;
 
 .pitanja{
 	float:right;
-	padding-top: 85px;
+	padding-right:20px;
 }
 
-#odg1, #pitanje {
+
+#odg1,#odg2,#odg3,#odg4, #pitanje1,#pitanje2,#pitanje3,#pitanje4 {
   padding: 5px;
   text-align: center;
-  background-color: #e5eecc;
-  border: solid 1px #c3c3c3;
+  background-color: white;
+  border: solid 1px black;
+ 
+ 
 }
 
-#odg1 {
-  padding: 50px;
-  display: none;
+.pitanja h2{
+  position: relative;
+  margin: 100px 0 25px 0;
+  font-size: 35px;
+  letter-spacing: 7px;
+  text-align: center;
+  text-decoration: underline dimgray;
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
+  text-shadow: 3px 3px #ccc;
+	
 }
-
-
+ #odg1,#odg2,#odg3,#odg4, #pitanje1,#pitanje2,#pitanje3,#pitanje4{
+  position: relative;
+  text-align: center;
+  font-family: "Lato", sans-serif;
+  width: 550px;
+  max-width: 550px;
+  min-width: 550px;
+ }
+ 
 
