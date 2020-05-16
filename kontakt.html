@@ -1,113 +1,157 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kontakt</title>
+    <link rel="stylesheet" href="./css/tptpstil.css" />
+    <script
+      language="JavaScript"
+      type="text/javascript"
+      src="./js/jQuery.js"
+    ></script>
+    <script
+      language="JavaScript"
+      type="text/javascript"
+      src="./js/preloader.js"
+    ></script>
+    <script
+      language="JavaScript"
+      type="text/javascript"
+      src="./js/updown.js"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/75cf2dfb1a.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Kontakt</title>
-  <link rel="stylesheet" href="./css/tptpstil.css" />
-  <script language="JavaScript" type="text/javascript" src="./js/jQuery.js"></script>
-  <script language="JavaScript" type="text/javascript" src="./js/preloader.js"></script>
-   <script language="JavaScript" type="text/javascript" src="./js/updown.js"></script>
-</head>
-
-<body>
-  <div class="social">
-    <a href="https://www.facebook.com">
-      <img src="./assets/facebook.png" alt="" />
-    </a>
-    <a href="https://www.instagram.com">
-      <img src="./assets/instagram.png" alt="" />
-    </a>
-    <a href="https://www.twitter.com">
-      <img src="./assets/twitter.png" alt="" />
-    </a>
-  </div>
-  <div class="dostava">
-    <img src="./assets/transport.png" alt="" />
-    <h4>BESPLATNA DOSTAVA ŠIROM BIH!</h4>
-    <img src="./assets/transport.png" alt="" />
-  </div>
-  <div class="topnav">
-    <table>
-      <tr>
-        <td>
-          <a href="start.html">
+  <body>
+    <div class="social">
+      <a href="https://www.facebook.com">
+        <img src="./assets/facebook.png" alt="" />
+      </a>
+      <a href="https://www.instagram.com">
+        <img src="./assets/instagram.png" alt="" />
+      </a>
+      <a href="https://www.twitter.com">
+        <img src="./assets/twitter.png" alt="" />
+      </a>
+    </div>
+    <div class="dostava">
+      <img src="./assets/transport.png" alt="" />
+      <h4>BESPLATNA DOSTAVA ŠIROM BIH!</h4>
+      <img src="./assets/transport.png" alt="" />
+    </div>
+    <div class="topnav">
+      <table>
+        <tr>
+          <td>
             <div class="logo">
-              <img src="./assets/logo.png" alt="bag" />
-              <h1>WebShop.</h1>
+              <a href="start.html">
+                <img src="./assets/logo.png" alt="bag" />
+                <h1>WebShop.</h1>
+              </a>
             </div>
-          </a>
-        </td>
-        <td>
-          <div class="navbuttons">
-            <form>
-              <input type="search" placeholder="npr. Košulje" aria-label="Search" />
-              <button type="submit">
-                Pretraži
-              </button>
-            </form>
-            <a href="start.html">
-              Početna
-            </a>
-            <a href="proizvodi.html">
-              Proizvodi
-            </a>
-            <a href="kontakt.html">
-              Kontakt
-            </a>
-          </div>
-        </td>
-      </tr>
-    </table>
-  </div>
-  <p class="par1"> Ovdje smo da vam pomognemo, bez obzira da li želite poručili neki naš proizvod ili imate neko pitanje u vezi proizvoda ili imate neku sugestiju ili pohvalu. </p> 
+          </td>
+          <td>
+            <div class="navbuttons">
+              <form>
+                <input
+                  type="search"
+                  placeholder="npr. Košulje"
+                  aria-label="Search"
+                />
+                <button type="submit">
+                  Pretraži
+                </button>
+              </form>
+              <a href="start.html">
+                Početna
+              </a>
+              <a href="proizvodi.html">
+                Proizvodi
+              </a>
+              <a href="kontakt.html">
+                Kontakt
+              </a>
+            </div>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <div class="kontakt-info">
+      <ul>
+        <li><i class="fas fa-phone-alt"></i> +387 35 289 077</li>
+        <li><i class="far fa-envelope"></i> info@webshop.ba</li>
+      </ul>
+    </div>
+    <p class="par1">
+      "Ovdje smo da vam pomognemo! Bez obzira da li želite poručiti neki naš<br />
+      proizvod, imate neko pitanje u vezi proizvoda ili imate neku sugestiju
+      <br />
+      ili pohvalu."
+    </p>
+    <div class="contact-form kont">
+      <h1>Kontaktirajte WebShop.</h1>
+      <form id="form" class="topBefore" onsubmit="return validateForm();">
+        <input id="name" type="text" placeholder="IME I PREZIME" />
+        <input id="number" type="text" placeholder="BROJ TELEFONA" />
+        <input id="email" type="text" placeholder="E-MAIL" />
+        <textarea id="message" type="text" placeholder="PORUKA"></textarea>
+        <input id="submit" type="submit" value="POŠALJI" />
+      </form>
+    </div>
 
-
-<div class="kont"> 
-  <h1> Kontaktirajte WebShop </h1>
- <form id="form" onsubmit="return validation();"> 
-        <input type="text" placeholder="Ime i prezime" id="name"> 
-        <input type="text" placeholder="Broj telefona" id="phone"> 
-        <input type="text" placeholder="E-mail" id="email"> 
-		<textarea placeholder="Poruka" id="message"></textarea> 
-      	<button type="submit" class="btn"> Pošalji </button>
-    
-  </form>
-</div>
-
-<div class="pitanja"> 
-<h2> Najčešće postavljena pitanja? </h2>
-<div id="pitanje1"> Koliki je rok isporuke pošiljke? </div>
-<div id="odg1"> Rok isporuke pošiljke je dva do tri radna dana, u zavisnosti od broja narudžbi u tom periodu. </div>
-<br>
-<div id="pitanje 2"> Na koji način se vrši plaćanje pošiljke? </div>
-<div id="odg2"> Naručenu pošiljku je moguće platiti pouzećem ili preko kartica: Visa, Mastercard, American Express i Maestro.</div>
-<br>
-<div id="pitanje 3"> Da li je moguće zamijeniti naručenu pošiljku? </div>
-<div id="odg 3"> Naručena pošiljka se može zamijeniti uz Vaše plaćanje poštarine i uz prethodno sačuvani račun. </div>
-<br>
-<div id="pitanje4"> Da li vršite povrat novca? </div>
-<div id="odg4"> Povrat novca vršimo isključivo ako postoji određena nepravilnost ili greška na našem proizvodu, uz prethodno sačuvani račun. </div>
-</div>
-
-
-  
-  
-
-</body>
-<div class="spinner-wrapper">
-  <div class="spinner">
-    <div class="sk-chase">
-      <div class="sk-chase-dot"></div>
-      <div class="sk-chase-dot"></div>
-      <div class="sk-chase-dot"></div>
-      <div class="sk-chase-dot"></div>
-      <div class="sk-chase-dot"></div>
-      <div class="sk-chase-dot"></div>
+    <div class="pitanja">
+      <h1>Najčešće postavljena pitanja?</h1>
+      <div class="pitanje" id="pitanje1">
+        1. Koliki je rok isporuke pošiljke? <i class="fas fa-chevron-down"></i>
+      </div>
+      <div id="odg1">
+        Rok isporuke pošiljke je dva do tri radna dana, u zavisnosti od broja
+        narudžbi u tom periodu.
+      </div>
+      <br />
+      <div class="pitanje" id="pitanje2">
+        2. Na koji način se vrši plaćanje pošiljke?
+        <i class="fas fa-chevron-down"></i>
+      </div>
+      <div id="odg2">
+        Naručenu pošiljku je moguće platiti pouzećem ili preko kartica: Visa,
+        Mastercard, <br />
+        American Express i Maestro.
+      </div>
+      <br />
+      <div class="pitanje" id="pitanje3">
+        3. Da li je moguće zamijeniti naručenu pošiljku?
+        <i class="fas fa-chevron-down"></i>
+      </div>
+      <div id="odg3">
+        Naručena pošiljka se može zamijeniti uz Vaše plaćanje poštarine i uz
+        prethodno sačuvani račun.
+      </div>
+      <br />
+      <div class="pitanje" id="pitanje4">
+        4. Da li vršite povrat novca? <i class="fas fa-chevron-down"></i>
+      </div>
+      <div id="odg4">
+        Povrat novca vršimo isključivo ako postoji određena nepravilnost ili
+        greška na našem proizvodu, <br />
+        uz prethodno sačuvani račun.
+      </div>
+    </div>
+  </body>
+  <div class="spinner-wrapper">
+    <div class="spinner">
+      <div class="sk-chase">
+        <div class="sk-chase-dot"></div>
+        <div class="sk-chase-dot"></div>
+        <div class="sk-chase-dot"></div>
+        <div class="sk-chase-dot"></div>
+        <div class="sk-chase-dot"></div>
+        <div class="sk-chase-dot"></div>
+      </div>
     </div>
   </div>
-</div>
-
 </html>
-    
