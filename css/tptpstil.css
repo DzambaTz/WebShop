@@ -852,6 +852,7 @@ font-size: 17px;
 .kont{
 	float:left;
 	padding-left:15px;
+	position: relative;
 }
 .kont h1 {
   position: relative;
@@ -939,11 +940,11 @@ font-size: 17px;
 }
 
 
-#odg1,#odg2,#odg3,#odg4, #pitanje1,#pitanje2,#pitanje3,#pitanje4 {
+#odg1,#odg2,#odg3,#odg4,#odg5,#pitanje1,#pitanje2,#pitanje3,#pitanje4, #pitanje5 {
   padding: 5px;
   text-align: center;
   background-color: white;
-  border: solid 1px black;
+  border-bottom: solid 1px black;
  
  
 }
@@ -951,7 +952,7 @@ font-size: 17px;
 .pitanja h2{
   position: relative;
   margin: 100px 0 25px 0;
-  font-size: 35px;
+  font-size: 30px;
   letter-spacing: 7px;
   text-align: center;
   text-decoration: underline dimgray;
@@ -960,7 +961,7 @@ font-size: 17px;
   text-shadow: 3px 3px #ccc;
 	
 }
- #odg1,#odg2,#odg3,#odg4, #pitanje1,#pitanje2,#pitanje3,#pitanje4{
+#odg1,#odg2,#odg3,#odg4,#odg5,#pitanje1,#pitanje2,#pitanje3,#pitanje4, #pitanje5{
   position: relative;
   text-align: center;
   font-family: "Lato", sans-serif;
@@ -969,4 +970,50 @@ font-size: 17px;
   min-width: 550px;
  }
  
+ .info{
+	position: relative;
+	bottom: 0px;
+	margin-left:600px;
+	margin-top: 700px;
+ }
+ 
+ #telefon{
+	 border-bottom: solid 1px black;
+	 width:80px;
+ }
+.info img {
+  display: inline-block;
+  width: 35px;
+  height: 23px;
+  padding: 5px;
+  float: left;
+
+
+}
+
+.info1{
+	position: relative;
+	bottom: 0px;
+	margin-left:750px;
+	margin-top: -57px;
+ }
+
+
+ #email1{
+	 border-bottom: solid 1px black;
+	 width:90px;
+	
+ }
+
+.info1 img {
+  display: inline-block;
+  width: 35px;
+  height: 23px;
+  padding: 5px;
+  float: left;
+
+
+}
+ 
+
 

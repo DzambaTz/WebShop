@@ -23,3 +23,21 @@ $(document).ready(function(){
     $("#odg4").slideToggle("slow");
   });
 });
+
+$(document).ready(function(){
+  $("#pitanje5").click(function(){
+    $("#odg5").slideToggle("slow");
+  });
+});
+
+$(document).ready(function(){
+  $("#telefon").click(function(){
+    $("#broj").slideToggle("slow");
+  });
+});
+
+$(document).ready(function(){
+  $("#email1").click(function(){
+    $("#mail1").slideToggle("slow");
+  });
+});
