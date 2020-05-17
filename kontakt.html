@@ -20,10 +20,12 @@
       type="text/javascript"
       src="./js/updown.js"
     ></script>
+    <script src="./js/tptpobrazac.js"></script>
     <script
       src="https://kit.fontawesome.com/75cf2dfb1a.js"
       crossorigin="anonymous"
     ></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
   </head>
 
   <body>
@@ -94,11 +96,36 @@
     </p>
     <div class="contact-form kont">
       <h1>Kontaktirajte WebShop.</h1>
-      <form id="form" class="topBefore" onsubmit="return validateForm();">
-        <input id="name" type="text" placeholder="IME I PREZIME" />
-        <input id="number" type="text" placeholder="BROJ TELEFONA" />
-        <input id="email" type="text" placeholder="E-MAIL" />
-        <textarea id="message" type="text" placeholder="PORUKA"></textarea>
+      <form
+        name="form-contact"
+        id="form"
+        class="topBefore"
+        onsubmit="return validateForm('contact');"
+      >
+        <input
+          name="name-contact"
+          id="name"
+          type="text"
+          placeholder="IME I PREZIME"
+        />
+        <input
+          name="number-contact"
+          id="number"
+          type="text"
+          placeholder="BROJ TELEFONA"
+        />
+        <input
+          name="email-contact"
+          id="email"
+          type="text"
+          placeholder="E-MAIL"
+        />
+        <textarea
+          name="message-contact"
+          id="message"
+          type="text"
+          placeholder="PORUKA"
+        ></textarea>
         <input id="submit" type="submit" value="POŠALJI" />
       </form>
     </div>
