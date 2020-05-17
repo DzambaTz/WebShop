@@ -749,6 +749,7 @@ hr {
 .post-info a {
   padding-left: 15px;
   text-decoration: underline dimgray;
+  color: #000;
 }
 
 .post-info a:visited {
