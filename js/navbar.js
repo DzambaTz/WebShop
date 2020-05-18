@@ -1,9 +1,9 @@
 function openNav(navName) {
   if (navName == "leftSidenav") {
-    document.getElementById(navName).style.width = "25%";
-  } else {
     document.getElementById(navName).style.width = "20%";
-    document.getElementById("main").style.marginLeft = "20%";
+  } else {
+    document.getElementById(navName).style.width = "250px";
+    document.getElementById("main").style.marginLeft = "250px";
   }
 }
 
