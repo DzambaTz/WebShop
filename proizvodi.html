@@ -15,6 +15,8 @@
       type="text/javascript"
       src="./js/preloader.js"
     ></script>
+    <script src="./js/Sort.js"></script>
+    <script src="./js/fadeIn.js"></script>
   </head>
 
   <body>
@@ -69,6 +71,75 @@
             </div>
           </td>
         </tr>
+      </table>
+    </div>
+    <div class="podjela">
+      <table width="100%" >
+          <tr>
+              <td style="width: 20%; vertical-align: top; padding-left: 50px;padding-top: 50px;position: fixed;" >
+                <h2 style="text-decoration: underline;padding-bottom: 35px;">Filteri</h2>
+                  <b>Sortiraj po cjeni:</b><br>
+                  <button class="button" onclick="sortTablelow()">Najviše</button></br>
+                  <button class="button" onclick="sortTable()">Najniže</button></br>
+                  <br><b>Sortiraj po nazivu:</b><br>
+                      <button class="button" onclick="sortTableAZ()">A-Z</button></br>
+                      <button class="button" onclick="sortTableZA()">Z-A</button></br>
+                  
+              </td>
+              <td>
+                  <table width="80%" style="float: right; padding-right: 80px;" id="myTable">
+                      <tr style="box-shadow: none;">
+                          <td></td>
+                          <td><h2>Opis</h2></td>
+                          <td></td>
+                          <td style="text-align: right;"><h2>Cijena</h2></td>
+                      </tr>
+                      <tr class="fade-in-element">
+                          <td><img src="./assets/duks.jpg" class="slika"></td>
+                          <td>ADIDAS Dukserica PRIME HOODIE<br><br><b>Dostupne veličine: </b>S, M, L, XL</td>
+                          <td class="itemLogo"><img src="./assets/adidas.png" alt=""></td>
+                          <td style="text-align: right;font-weight: bold;">119.00<td>KM</td></td>
+                          
+                      </tr>
+                      <tr  class="fade-in-element">
+                          <td><img src="./assets/duks1.jpg" class="slika"></td>
+                          <td>UNDER ARMOUR Dukserica UA /MOVE FZ<br><br><b>Dostupne veličine: </b>S, M, L, XL</td>
+                          <td class="itemLogo"><img src="./assets/under-armour.png" alt=""></td>
+                          <td style="text-align: right;font-weight: bold;">127.20<td>KM</td></td>
+                      </tr>
+                      <tr  class="fade-in-element">
+                          <td><img src="./assets/duks2.jpg" class="slika"></td>
+                          <td>UNDER ARMOUR Dukserica RIVAL FLEECE<br><br><b>Dostupne veličine: </b>S, M, L, XL</td>
+                          <td class="itemLogo"><img src="./assets/under-armour.png" alt=""></td>
+                          <td style="text-align: right;font-weight: bold;">71.20<td>KM</td></td>
+                      </tr>
+                      <tr class="fade-in-element">
+                          <td><img src="./assets/duks4.jpg" class="slika"></td>
+                          <td>CHAMPION Dukserica CREWNECK SWEATSHIRT<br><br><b>Dostupne veličine: </b>S, M, L, XL</td>
+                          <td class="itemLogo"><img src="./assets/champion.png" alt=""></td>
+                          <td  style="text-align: right;font-weight: bold;">59.50<td>KM</td></td>
+                      </tr>
+                      <tr  class="fade-in-element">
+                          <td><img src="./assets/duks5.jpg" class="slika"></td>
+                          <td>LOTTO Dukserica DIEGO FZ HD<br><br><b>Dostupne veličine: </b>S, M, L, XL</td>
+                          <td class="itemLogo"><img src="./assets/lotto.png" alt=""></td>
+                          <td   style="text-align: right;font-weight: bold;">53.40<td>KM</td></td>
+                      </tr>
+                      <tr  class="fade-in-element">
+                          <td><img src="./assets/duks7.jpg" class="slika"></td>
+                          <td>LONSDALE Dukserica FLAG HOODIE<br><br><b>Dostupne veličine: </b>S, M, L, XL</td>
+                          <td class="itemLogo"><img src="./assets/lonsdale.png" alt=""></td>
+                          <td style="text-align: right;font-weight: bold;">48.50<td>KM</td></td>
+                      </tr>
+                      <tr   class="fade-in-element">
+                          <td><img src="./assets/duks9.jpg" class="slika"></td>
+                          <td>HELLY HANSEN Dukserica SHORE HYBRID INSULATOR<br><br><b>Dostupne veličine: </b>S, M, L, XL</td>
+                          <td class="itemLogo"><img src="./assets/helly.png" alt=""></td>
+                          <td style="text-align: right;font-weight: bold;">188.00<td>KM</td></td>
+                      </tr>
+                  </table>
+              </td>
+          </tr>
       </table>
     </div>
   </body>

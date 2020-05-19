@@ -1,15 +1,15 @@
 $(document).ready(function () {
   $("#pitanje1").click(function () {
-    $("#odg1").slideToggle("slow");
+    $("#odg1").slideToggle("fast");
     $(".fa-chevrown");
   });
   $("#pitanje2").click(function () {
-    $("#odg2").slideToggle("slow");
+    $("#odg2").slideToggle("fast");
   });
   $("#pitanje3").click(function () {
-    $("#odg3").slideToggle("slow");
+    $("#odg3").slideToggle("fast");
   });
   $("#pitanje4").click(function () {
-    $("#odg4").slideToggle("slow");
+    $("#odg4").slideToggle("fast");
   });
 });

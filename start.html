@@ -27,6 +27,7 @@
     <script src="./js/fadeIn.js"></script>
     <script src="./js/slideLeft.js"></script>
     <script src="./js/tptpobrazac.js"></script>
+    <script src="./js/subscribe.js"></script>
     <script
       src="https://kit.fontawesome.com/75cf2dfb1a.js"
       crossorigin="anonymous"
@@ -152,10 +153,17 @@
     <div class="subscribe fade-in-element hidden">
       <div class="signup">
         Novi katalozi svake sedmice!<br />
-        <input type="text" placeholder="Email" aria-label="Search" />
-        <button type="submit">
-          Pretplati me
-        </button>
+        <form name="subform" onsubmit="return subscribe();">
+          <input
+            name="subinput"
+            type="text"
+            placeholder="Email"
+            aria-label="Search"
+          />
+          <button name="subbutt" type="submit">
+            Pretplati me
+          </button>
+        </form>
       </div>
     </div>
     <div class="shoe"></div>
@@ -240,17 +248,31 @@
         class="topBefore"
         onsubmit="return validateForm('start');"
       >
-        <input name="name-start" id="name" type="text" placeholder="IME" />
+        <input
+          name="name-start"
+          id="name"
+          autocomplete="off"
+          type="text"
+          placeholder="IME"
+        />
         <input
           name="number-start"
           id="number"
           type="text"
+          autocomplete="off"
           placeholder="BROJ TELEFONA"
         />
-        <input name="email-start" id="email" type="text" placeholder="E-MAIL" />
+        <input
+          name="email-start"
+          id="email"
+          type="text"
+          autocomplete="off"
+          placeholder="E-MAIL"
+        />
         <textarea
           id="message-start"
           type="text"
+          autocomplete="off"
           placeholder="PORUKA"
         ></textarea>
         <input id="submit" type="submit" value="POŠALJI" />
@@ -360,7 +382,7 @@
         <h3>nedim.dzelilovic@fet.ba</h3>
         <br />
         <h2>Kontakt:</h2>
-        <h3></h3>
+        <h3>+387601231231</h3>
         <br />
       </div>
     </div>
@@ -383,7 +405,7 @@
         <h3>amar.dzindic@fet.ba</h3>
         <br />
         <h2>Kontakt:</h2>
-        <h3></h3>
+        <h3>+387604564564</h3>
         <br />
       </div>
     </div>

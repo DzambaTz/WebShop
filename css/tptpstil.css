@@ -850,7 +850,6 @@ hr {
 }
 
 .par1 {
-  display: inline-block;
   width: 60%;
   font-family: "Lobster", "cursive";
   font-weight: bold;
@@ -860,7 +859,7 @@ hr {
   border-top: 1px solid #000;
   border-bottom: 1px solid #000;
   padding-bottom: 30px;
-  margin-right: 30px;
+  margin: 50px auto;
 }
 .kont {
   display: inline-block;
@@ -960,7 +959,7 @@ hr {
   text-decoration: underline dimgray;
   font-family: "Roboto", "sans-serif";
   font-weight: 900;
-  text-shadow: 3px 3px #ccc;
+  text-shadow: 2px 2px #ccc;
   padding-bottom: 40px;
 }
 
@@ -986,6 +985,7 @@ hr {
   font-family: "Roboto", "sans-serif";
   font-weight: 900;
   cursor: pointer;
+  font-size: 20px;
 }
 
 .pitanja i:hover {
@@ -993,10 +993,11 @@ hr {
 }
 
 .kontakt-info {
+  text-shadow: 2px 2px #a3a3a3;
   display: inline-block;
-  width: 37%;
   height: 300px;
   vertical-align: top;
+  margin-left: 120px;
 }
 
 .kontakt-info ul {
@@ -1063,4 +1064,53 @@ hr {
   width: 200px;
   height: 200px;
   margin-top: 20%;
+}
+
+.podjela {
+  font-family: "Roboto", "sans-serif";
+}
+.podjela img {
+  width: 200px;
+  height: 200px;
+}
+
+.podjela table #myTable {
+  border-collapse: separate;
+  border-spacing: 3em;
+}
+
+.podjela table #myTable img {
+  /*border: 1px solid #000;*/
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.podjela tr {
+  box-shadow: 0.1rem 0.1rem 2.5rem -1rem #a0a0a0;
+}
+
+.itemLogo img {
+  width: 70px;
+  height: 50px;
+}
+
+.podjela button {
+  display: inline-block;
+  padding: 0.35em 1.2em;
+  border: 0.2em solid #000;
+  margin-top: 15px;
+  border-radius: 0.12em;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  color: #000;
+  text-align: center;
+  transition: all 0.2s;
+  background-color: transparent;
+}
+
+.podjela button:hover {
+  color: #fff;
+  background-color: #000;
 }
